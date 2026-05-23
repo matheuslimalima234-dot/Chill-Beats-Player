@@ -8,7 +8,7 @@ const songsList = [
     {
         name: "Lofi Vibes",
         artist: "Lofi Artist",
-        cover: "/img/3.png",
+        cover: "img/3.png",
         src: "audio/song2.mp3"
     },
     {
