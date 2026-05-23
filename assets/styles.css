@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: #0d0d0d;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    padding: 10px;
+}
+
+.container .song-info {
+    background: linear-gradient(135deg, #121212, #000000);
+    margin: 0 15px;
+    padding: 15px 15px 5px 150px;
+    border-radius: 15px 15px 0px 0px;
+    border: 1px solid rgba(168, 63, 213, 0.2);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5), 0px 0px 15px rgba(168, 63, 213, 0.08);
+}
+
+.container .song-info .song-name {
+    color: #fff;
+    font-size: 14px;
+    margin: 3px 0 20px;
+}
+
+.container .song-info .artist-name {
+    color: #fcfcfc;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container .song-info .progress-bar {
+    height: 5px;
+    background-color: #2d2d2d;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container .song-info .progress-bar .fill-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #a83fd5, #ff4fd8);
+    border-radius: 20px;
+}
+
+.container .song-info .time {
+    color: #fff;
+    font-size: 10px;
+    bottom: 5px;
+    right: 15px;
+    margin: 10px 0;
+}
+
+.container .disk {
+    max-width: 120px;
+}
+
+.container .disk .active {
+    animation: rotate 3s linear 0s infinite forwards;
+}
+
+.container .disk .cover {
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url('../img/3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    border: 3px solid #342048;
+    border-radius: 50%;
+    box-shadow: 0px 10px 30px #342048;
+    transition: all 0.2s ease in-out;
+}
+
+.container .disk .circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15%;
+    top: 30%;
+    background-color: #342048;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.container .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #161616, #141415);
+    width: 450px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(128, 0, 255, 0.2);
+}
+
+.container .controls #play {
+    background: #6c2d88;
+    color: #fff;
+    padding: 15px 15px 14px 17px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.container .controls #play:hover {
+    background-color: #8d3bb3;;
+    color: #fff;
+    padding: 15px 15px 14px 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+.container .controls i {
+    padding: 30px 8px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.container .controls i:hover {
+    color: #a83fd5;
+    transform: scale(1.2);
+}
+
+.container .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.container .volume-control .volume {
+    width: 90px;
+    cursor: pointer;
+    accent-color: #a83fd5;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
