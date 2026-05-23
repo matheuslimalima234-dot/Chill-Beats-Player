@@ -55,4 +55,6 @@ It was created to practice:
 Projeto desenvolvido para aprendizado e portfólio.  
 Project created for learning and portfolio purposes.
 
-![preview](../img/preview.png)
+## 📸 Preview
+
+![preview](./img/preview.png)
