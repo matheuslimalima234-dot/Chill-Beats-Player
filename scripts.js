@@ -2,20 +2,20 @@ const songsList = [
     {
         name: "Lofi Chill",
         artist: "Lofi Artist",
-        cover: "../img/3.png",
-        src: "../audio/song1.mp3"
+        cover: "img/3.png",
+        src: "audio/song1.mp3"
     },
     {
         name: "Lofi Vibes",
         artist: "Lofi Artist",
-        cover: "../img/3.png",
-        src: "../audio/song2.mp3"
+        cover: "/img/3.png",
+        src: "audio/song2.mp3"
     },
     {
         name: "Lofi Dreams",
         artist: "Lofi Artist",
-        cover: "../img/3.png",
-        src: "../audio/song3.mp3"
+        cover: "img/3.png",
+        src: "audio/song3.mp3"
     }
 ];
 

@@ -72,7 +72,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    background: url('../img/3.png');
+    background: url('img/3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
